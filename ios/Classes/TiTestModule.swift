@@ -42,7 +42,7 @@ class TiTest: TiModule {
     debugPrint("[DEBUG] \(self) loaded")
   }
   
-  @objc(get:)
+  @objc(post:)
   func post(params: Array<Any>?) {
     let request = Alamofire.request(URL(string: "https://httpbin.org/response-headers")!).response { response in
       guard let response = response.data else { return }
