@@ -8,7 +8,6 @@
 
 import UIKit
 import TitaniumKit
-import Alamofire
 
 /**
  
@@ -24,8 +23,8 @@ import Alamofire
  
  */
 
-@objc(TiTest)
-class TiTest: TiModule {
+@objc(TiTestModule)
+class TiTestModule: TiModule {
 
   public let testProperty: String = "Hello World"
   
@@ -42,14 +41,9 @@ class TiTest: TiModule {
     debugPrint("[DEBUG] \(self) loaded")
   }
   
-  @objc(get:)
-  func post(params: Array<Any>?) {
-    let request = Alamofire.request(URL(string: "https://httpbin.org/response-headers")!).response { response in
-      guard let response = response.data else { return }
-      
-      print(String(data: response, encoding: .utf8)!)
-    }
-    
-    request.resume()
+  @objc(test:)
+  func test(params: Array<Any>?) {
+    print(params!)
+    NSLog("%@", params!)
   }
 }

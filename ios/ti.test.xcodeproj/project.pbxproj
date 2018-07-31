@@ -13,9 +13,26 @@
 		DB34CDE6207B9EBD005F8E8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB34CDE5207B9EBD005F8E8C /* Foundation.framework */; };
 		DB52E2401E9CCF8D00AAAEE0 /* TiTest_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = DB52E23F1E9CCF8D00AAAEE0 /* TiTest_Prefix.pch */; };
 		DB52E2431E9CD0F800AAAEE0 /* TiTestModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB52E2421E9CD0F800AAAEE0 /* TiTestModule.swift */; };
+		DB73EFEA2110E7450075A42A /* TitaniumKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB73EFE72110E72C0075A42A /* TitaniumKit.framework */; };
 		DB75E5161E9CD59000809B2D /* TiTest.h in Headers */ = {isa = PBXBuildFile; fileRef = DB75E5151E9CD58100809B2D /* TiTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DBFCA0EC2110AA3300D8C59B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBFCA0EA2110AA3300D8C59B /* Alamofire.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB73EFE62110E72C0075A42A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB73EFE12110E72C0075A42A /* TitaniumKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DB258CCD1F09757E000D0D8D;
+			remoteInfo = TitaniumKit;
+		};
+		DB73EFE82110E73F0075A42A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB73EFE12110E72C0075A42A /* TitaniumKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DB258CCC1F09757E000D0D8D;
+			remoteInfo = TitaniumKit;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DB24E03B20766AC90033B2B1 /* TiTestExampleProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TiTestExampleProxy.swift; path = Classes/TiTestExampleProxy.swift; sourceTree = "<group>"; };
@@ -27,8 +44,8 @@
 		DB52E23F1E9CCF8D00AAAEE0 /* TiTest_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiTest_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		DB52E2411E9CD09900AAAEE0 /* titanium.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
 		DB52E2421E9CD0F800AAAEE0 /* TiTestModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TiTestModule.swift; path = Classes/TiTestModule.swift; sourceTree = "<group>"; };
+		DB73EFE12110E72C0075A42A /* TitaniumKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TitaniumKit.xcodeproj; path = "../../../../Library/Application Support/Titanium/mobilesdk/osx/8.0.0/iphone/TitaniumKit/TitaniumKit.xcodeproj"; sourceTree = "<group>"; };
 		DB75E5151E9CD58100809B2D /* TiTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TiTest.h; path = Classes/TiTest.h; sourceTree = "<group>"; };
-		DBFCA0EA2110AA3300D8C59B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = platform/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +54,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB34CDE6207B9EBD005F8E8C /* Foundation.framework in Frameworks */,
-				DBFCA0EC2110AA3300D8C59B /* Alamofire.framework in Frameworks */,
+				DB73EFEA2110E7450075A42A /* TitaniumKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +86,6 @@
 		DB34CDE2207B9D6A005F8E8C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DBFCA0EA2110AA3300D8C59B /* Alamofire.framework */,
 				DB34CDE5207B9EBD005F8E8C /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -78,6 +94,7 @@
 		DB52E2201E9CCD7000AAAEE0 = {
 			isa = PBXGroup;
 			children = (
+				DB73EFE12110E72C0075A42A /* TitaniumKit.xcodeproj */,
 				DB52E22C1E9CCD7000AAAEE0 /* TiTest */,
 				DB52E22B1E9CCD7000AAAEE0 /* Products */,
 				DB34CDE2207B9D6A005F8E8C /* Frameworks */,
@@ -99,6 +116,14 @@
 				DB258CA41F0964DE000D0D8D /* Misc */,
 			);
 			name = TiTest;
+			sourceTree = "<group>";
+		};
+		DB73EFE22110E72C0075A42A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB73EFE72110E72C0075A42A /* TitaniumKit.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +154,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				DB73EFE92110E73F0075A42A /* PBXTargetDependency */,
 			);
 			name = TiTest;
 			productName = TiTest;
@@ -160,12 +186,28 @@
 			mainGroup = DB52E2201E9CCD7000AAAEE0;
 			productRefGroup = DB52E22B1E9CCD7000AAAEE0 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DB73EFE22110E72C0075A42A /* Products */;
+					ProjectRef = DB73EFE12110E72C0075A42A /* TitaniumKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				DB52E2291E9CCD7000AAAEE0 /* TiTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DB73EFE72110E72C0075A42A /* TitaniumKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TitaniumKit.framework;
+			remoteRef = DB73EFE62110E72C0075A42A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DB52E2281E9CCD7000AAAEE0 /* Resources */ = {
@@ -189,6 +231,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB73EFE92110E73F0075A42A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TitaniumKit;
+			targetProxy = DB73EFE82110E73F0075A42A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		DB52E2301E9CCD7000AAAEE0 /* Debug */ = {
