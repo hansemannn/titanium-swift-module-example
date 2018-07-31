@@ -1,0 +1,11 @@
+framework module TiTest {
+  umbrella header "TiTest.h"
+
+  export *
+  module * { export * }
+}
+
+module TiTest.Swift {
+    header "TiTest-Swift.h"
+    requires objc
+}
